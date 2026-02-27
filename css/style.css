@@ -503,3 +503,63 @@
         height: 35px;
     }
 }
+.ham-icon {
+    display: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .ham-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(26, 42, 58, 0.95);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* OPEN menu */
+    .nav-links:target {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .close {
+        color: #FFD700;
+        font-size: 0.9rem;
+    }
+    
+}
+/* Hide Close link by default (desktop) */
+.close-item {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Show Close link only on mobile */
+    .close-item {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .close {
+        color: #FFD700;
+        font-size: 0.9rem;
+    }
+}
+

@@ -12,22 +12,28 @@
 
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo"> OKAYAMA</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <!-- <div id="lang-switcher" style="position: absolute; right: 20px; top: 20px">
+    
+   <nav id="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">OKAYAMA</a>
 
-            <button onclick="setLanguage('ne')">NE</button>
-            <button onclick="setLanguage('jp')">JP</button>
-        </div> -->
-    </nav>
+        <!-- Hamburger -->
+        <a href="#menu" class="ham-icon">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <!-- Menu -->
+        <ul class="nav-links" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="close-item"><a href="#" class="close">Close</a></li>
+
+        </ul>
+    </div>
+</nav>
+
 
     <!-- Hero Section -->
     <header>

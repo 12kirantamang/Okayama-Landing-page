@@ -9,24 +9,34 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link href="img/jibc1.png" rel="icon" />
 <link rel="stylesheet" href="css/blog.css" />
+<link rel="stylesheet" href="css/style.css" />
+
 
 <body>
-  <nav id="navbar">
+   <nav id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo"> OKAYAMA</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <a href="#" class="logo">OKAYAMA</a>
+
+        <!-- Hamburger -->
+        <a href="#menu" class="ham-icon">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <!-- Menu -->
+         <ul class="nav-links" id="menu">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
         <li><a href="blog.html">blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div id="lang-switcher" style="position: absolute; right: 20px; top: 20px">
+            <li class="close-item"><a href="#" class="close">Close</a></li>
+        <li><div id="lang-switcher" style="position: absolute; right: 20px; top: 20px">
       <button onclick="setLanguage('en')">EN</button>
       <button onclick="setLanguage('ne')">NE</button>
-      <button onclick="setLanguage('jp')">JP</button>
+      <button onclick="setLanguage('jp')">JP</button></li>
+        </ul>
     </div>
-  </nav>
+</nav>
+  
 
   <!-- Hero Section -->
   <header>
